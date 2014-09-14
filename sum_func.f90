@@ -1,7 +1,7 @@
+!Program that calculates the sum of 2 real numbers with a function
 PROGRAM sum_func
 
 IMPLICIT NONE
-REAL :: m,n
 REAL :: A, B, S = 0.0, funcsum
 
 PRINT *, "insert first number:"

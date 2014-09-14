@@ -3,15 +3,15 @@ PROGRAM read_mat
 
 IMPLICIT NONE
 
-REAL :: m,n,i,j
-REAL DIMENSION(m,n) :: A
-
+INTEGER :: m,n,i,j
 PRINT *, "insert dimensions"
 READ *, m,n
 
+REAL, DIMENSION(m,n) :: A
+
 DO i=1,m
   DO j=1,n
-    READ *, A(i,j)
+    READ (10,*) A(i,j)
   ENDDO
 ENDDO
 

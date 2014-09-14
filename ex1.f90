@@ -1,51 +1,30 @@
-PROGRAM matrix_sum
+PROGRAM matsum
 
-REAL :: m,n
-REAL MSUM
+IMPLICIT NONE
+INTEGER :: m,n
+REAL DIMENSION(m,n):: A, B, S = 0.0, funcsum
 
-PRINT *, "enter the dimensions of the matrices:"
-READ *, m, n
-PRINT *, m,n
+PRINT *, "insert dimensions"
+READ *, m,n
 
-MSUM(m,n)
-END PROGRAM matrix_sum
+read
+S = funcsum(A,B)
+PRINT *, "sum is:",S
 
-REAL FUNCTION MSUM(m,n)
+END PROGRAM matsum
 
-  REAL DIMENSION(m,n) :: A,B,C
-  INTEGER :: i,j
+FUNCTION funcsum(A,B)
+  REAL DIMENSION(m,n):: funcsum
+  funcsum = A + B
+  RETURN
+END FUNCTION funcsum
 
-!Read first array
-  PRINT *, "Read the first array entry by entry"
-  DO i = 1,m
-    DO j =1,n
-      READ (10,*) A(i,j)
+FUNCTION read(X,m,n)
+  INTEGER :: i, j, m, n
+  REAL DIMENSION(m,n) :: X
+  DO i=1,m
+    DO j=1,n
+      READ *, X(i,j)
     ENDDO
   ENDDO
-
-!Read second array
-  PRINT *, "Read the second array entry by entry"
-  DO i = 1,m
-    DO j =1,n
-      READ (10,*) A(i,j)
-    ENDDO
-  ENDDO
-
-!Calculate the sum
-  PRINT *, "Calculate the sum of the two arrays"
-  DO i = 1,m
-    DO j =1,n
-      C(i,j) = A(i,j) + B(i,j)
-    ENDDO
-  ENDDO
-
-!Print the sum of the two arrays
-  PRINT *, "The sum is:"
-  DO i = 1,m
-    DO j =1,n
-      PRINT(10.*) C(i,j)
-    ENDDO
-  ENDDO
-
-RETURN
-END
+END FUNCTION read
