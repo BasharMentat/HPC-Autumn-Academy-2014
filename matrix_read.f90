@@ -3,22 +3,21 @@ PROGRAM read_mat
 
 IMPLICIT NONE
 
-INTEGER :: m,n,i,j
-PRINT *, "insert dimensions"
-READ *, m,n
+INTEGER :: i,j
 
-REAL, DIMENSION(m,n) :: A
+REAL, DIMENSION(2,3) :: A
 
-DO i=1,m
-  DO j=1,n
-    READ (10,*) A(i,j)
+DO i=1,2
+  DO j=1,3
+    READ (*,*) A(i,j)
   ENDDO
 ENDDO
 
-DO i=1,m
-  DO j=1,n
-    PRINT *, A(i,j)
+DO i=1,2
+  DO j=1,3
+    WRITE(*,1F1.1, ADVANCE = "NO")  A(i,j)
   ENDDO
+  WRITE(*,*) ""
 ENDDO
 
 
