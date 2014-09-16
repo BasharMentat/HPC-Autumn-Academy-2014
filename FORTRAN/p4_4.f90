@@ -3,7 +3,10 @@ PROGRAM triangle
   PRINT *, "Sides of length"
   READ *, A,B,C
 
-  IF ((A.EQ.B).AND.(B.EQ.C)) THEN
+
+  IF ((2 * MAX(A,B,C) ).GE.(A + B + C)) THEN
+    PRINT *, "Not a triangle"
+  ELSE IF ((A.EQ.B).AND.(B.EQ.C)) THEN
     PRINT *, "Equilateral"
   ELSE IF ((A.EQ.B).OR.(B.EQ.C).OR.(C.EQ.A)) THEN
     PRINT *, "Isoceles"
