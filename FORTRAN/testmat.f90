@@ -1,0 +1,6 @@
+PROGRAM Test
+  REAL, DIMENSION(2,3) :: X
+
+  READ *, X
+  PRINT *, size(X)
+END PROGRAM Test
