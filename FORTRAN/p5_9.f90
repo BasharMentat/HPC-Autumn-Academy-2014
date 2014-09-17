@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PROGRAM MaTMuL
 INTEGER :: m,n,o,p
 REAL, DIMENSION(:,:), ALLOCATABLE :: result, left, right
@@ -59,3 +60,8 @@ SUBROUTINE MatPrint(A,m,n)
   END DO
 
 END SUBROUTINE MatPrint
+=======
+PROGRAM hand_matmul
+
+END PROGRAM hand_matmul
+>>>>>>> 9468f27979f3a86b8e9ba3cabbff5c345da8d490
