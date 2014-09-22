@@ -1,0 +1,3 @@
+MODULE double
+  INTEGER, PARAMETER :: DP = KIND(0.0D0)
+END MODULE double
