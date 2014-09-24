@@ -25,7 +25,7 @@ ALLOCATE(U(m,n))
 PRINT *, "Reading the matrix to decompose:"
 READ *, A
 
-CALL LU_Doolittle(A,L,U)
+CALL LU_Crout(A,L,U)
 
 PRINT *, "Lower triangular part"
 CALL MatPrint(L,m,n)

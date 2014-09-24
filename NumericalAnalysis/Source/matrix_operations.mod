@@ -1,5 +1,5 @@
 GFORTRAN module version '10' created from matrix_operations.f90
-MD5:21fa1eed15c77f6ac1c21afca691a105 -- If you edit this, you'll get what you deserve.
+MD5:61b7559004f1b2c1e6f037cc22f05081 -- If you edit this, you'll get what you deserve.
 
 (() () () () () () () () () () () () () () () () () () () () () () ()
 () () () ())
@@ -22,10 +22,13 @@ INTEGER 4 0 0 0 INTEGER ()) 0 '8') () 0 () () () 0 0)
 4 'kind' '(intrinsic)' '' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
 UNKNOWN UNKNOWN 0 0 FUNCTION) (INTEGER 4 0 0 0 INTEGER ()) 0 0 () () 4 ()
 () () 0 0)
-5 'lu_doolittle' 'matrix_operations' '' 1 ((PROCEDURE UNKNOWN-INTENT
+5 'lu_crout' 'matrix_operations' '' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN 0 0 SUBROUTINE IMPLICIT_PURE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 0 UNKNOWN ()) 6 0 (7 8 9) () 0 () () () 0 0)
+10 'lu_doolittle' 'matrix_operations' '' 1 ((PROCEDURE UNKNOWN-INTENT
 MODULE-PROC DECL UNKNOWN 0 0 SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
-0 UNKNOWN ()) 6 0 (7 8 9) () 0 () () () 0 0)
-10 'matrix_operations' 'matrix_operations' '' 1 ((MODULE UNKNOWN-INTENT
+0 UNKNOWN ()) 11 0 (12 13 14) () 0 () () () 0 0)
+15 'matrix_operations' 'matrix_operations' '' 1 ((MODULE UNKNOWN-INTENT
 UNKNOWN-PROC UNKNOWN UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () ()
 0 () () () 0 0)
 7 'a' '' '' 6 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN 0 0 DIMENSION
@@ -40,7 +43,19 @@ INTEGER 4 0 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 0 INTEGER
 DUMMY) (REAL 8 0 0 0 REAL ()) 0 0 () (2 0 ASSUMED_SHAPE (CONSTANT (
 INTEGER 4 0 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 0 INTEGER
 ()) 0 '1') ()) 0 () () () 0 0)
+12 'a' '' '' 11 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN 0 0 DIMENSION
+DUMMY) (REAL 8 0 0 0 REAL ()) 0 0 () (2 0 ASSUMED_SHAPE (CONSTANT (
+INTEGER 4 0 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0 0 INTEGER
+()) 0 '1') ()) 0 () () () 0 0)
+13 'l' '' '' 11 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN 0 0
+DIMENSION DUMMY) (REAL 8 0 0 0 REAL ()) 0 0 () (2 0 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0
+0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
+14 'u' '' '' 11 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN 0 0
+DIMENSION DUMMY) (REAL 8 0 0 0 REAL ()) 0 0 () (2 0 ASSUMED_SHAPE (
+CONSTANT (INTEGER 4 0 0 0 INTEGER ()) 0 '1') () (CONSTANT (INTEGER 4 0 0
+0 INTEGER ()) 0 '1') ()) 0 () () () 0 0)
 )
 
-('double' 0 2 'dp' 0 3 'kind' 0 4 'lu_doolittle' 0 5 'matrix_operations'
-0 10)
+('double' 0 2 'dp' 0 3 'kind' 0 4 'lu_crout' 0 5 'lu_doolittle' 0 10
+'matrix_operations' 0 15)
